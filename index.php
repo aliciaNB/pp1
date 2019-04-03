@@ -27,4 +27,9 @@ $getAverage = average($numbers);
 
 echo "<p> The average value found in the array was " . $getAverage . "</p>";
 
+$anArray = removeDups($numbers);
+
+echo "<p> This array has had duplicates removed from it:</p>";
+printArr($anArray);
+
 ?>

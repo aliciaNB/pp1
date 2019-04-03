@@ -32,3 +32,7 @@ function average($myArray) {
 
     return $sum / $count;
 }
+
+function removeDups($myArray) {
+    return array_unique($myArray);
+}
