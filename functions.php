@@ -18,5 +18,17 @@ function largest($myArray) {
     }
 
     return $largestValue;
+}
 
+function average($myArray) {
+
+    $sum = 0;
+    $count = 0;
+
+    foreach ($myArray as $item) {
+        $sum += $item;
+        $count++;
+    }
+
+    return $sum / $count;
 }

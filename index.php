@@ -21,5 +21,10 @@ $numbers = array(7, 9, 8, 9, 8, 8, 6);
 printArr($numbers);
 $largestResult = largest($numbers);
 
-echo "<p> The largest value found in the array was " . $largestResult . "</p>"
+echo "<p> The largest value found in the array was " . $largestResult . "</p>";
+
+$getAverage = average($numbers);
+
+echo "<p> The average value found in the array was " . $getAverage . "</p>";
+
 ?>
