@@ -11,3 +11,16 @@
     <h1>Pair Program 1</h1>
 </body>
 </html>
+
+<?php
+
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
+
+function printArr($myArray) {
+    foreach ($myArray as $item) {
+        echo '<p>' . $item . '</p>';
+    }
+}
+
+printArr($numbers);
+?>
