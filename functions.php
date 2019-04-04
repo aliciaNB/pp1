@@ -36,3 +36,8 @@ function average($myArray) {
 function removeDups($myArray) {
     return array_unique($myArray);
 }
+
+function distribution($myArray) {
+    sort($myArray);
+    return array_count_values($myArray);
+}

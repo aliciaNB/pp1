@@ -27,9 +27,19 @@ $getAverage = average($numbers);
 
 echo "<p> The average value found in the array was " . $getAverage . "</p>";
 
-$anArray = removeDups($numbers);
+$removeDupsResult = removeDups($numbers);
 
-echo "<p> This array has had duplicates removed from it:</p>";
-printArr($anArray);
+echo "<p> This array has had duplicates removed from it: ";
+$format = implode(", ", $removeDupsResult);
+echo "[" . $format . "]</p>";
+
+$distributionResult = distribution($numbers);
+echo "<p> Given an array of values an associative array was created and sorted: [";
+//print_r($distributionResult);
+
+foreach($distributionResult as $v => $value) {
+    echo $v . " => " . $value . ", ";
+}
+echo "]</p>";
 
 ?>
